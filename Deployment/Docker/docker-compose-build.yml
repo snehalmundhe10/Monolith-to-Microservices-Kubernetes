@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: .
-    image: snehal22/reverseproxy 
+    image: snehal22/reverseproxy:new
   backend_user:
     build:
       context: ../../udacity-api-user
     image: snehal22/user
   backend_feed:
     build:
-      context: ../../udacity-api-feed  
+      context: ../../udacity-api-feed
     image: snehal22/feed
   frontend:
     build:
-      context: ../../udagram-frontend  
+      context: ../../udagram-frontend
     image: snehal22/image-filter-frontend
