@@ -1,7 +1,7 @@
 version: "3"
 services:
   reverseproxy:
-      image: snehal22/nginx-conf
+      image: snehal22/reverseproxy
       ports:
           - 8080:8080
       restart: always
