@@ -1,21 +1,18 @@
-# Use Node base image
-FROM node:13
+FROM node:12
 
-# Create app directory in docker
+# Create app directory
+
 WORKDIR /usr/src/app
 
-# Install app dependencies by copying 
-# package.json and package.lock.json
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+
 COPY package*.json ./
+RUN npm ci 
 
-# Install dependencies in docker
-Run npm install
+# Bundle app source
 
-# Copy app from local environment into docker image
 COPY . .
-
-# Set the API's port number
 EXPOSE 8080
-
-# Define Docker's behavior when the image is run
-CMD["npm run dev"]
+CMD [ "npm", "run", "dev" ]

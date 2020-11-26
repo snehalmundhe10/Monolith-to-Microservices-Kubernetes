@@ -1,5 +1,5 @@
 import AWS = require('aws-sdk');
-import {config} from '../../udacity-api-feed/src/config/config';
+import {config} from './config/config';
 
 
 // Configure AWS
