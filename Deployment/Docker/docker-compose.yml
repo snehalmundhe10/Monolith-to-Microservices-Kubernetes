@@ -9,7 +9,7 @@ services:
         - backend-user
         - backend-feed
   backend-user:
-    image: snehal22/user
+    image: snehal22/user-rest:new
     environment:
       POSTGRES_USERNAME: $POSTGRES_USERNAME
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD 

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: monomicro
+  AWS_PROFILE: default
+  AWS_REGION: us-east-2
+  JWT_TOKEN: hello
+  POSTGRES_DATABASE: monomicro
+  POSTGRES_HOST: monomicro.cropxhkofmcs.us-east-2.rds.amazonaws.com 
+  URL: http://localhost:8100  
+metadata:
+  name: env-config

@@ -7,7 +7,7 @@ services:
   backend_user:
     build:
       context: ../../udacity-api-user
-    image: snehal22/user
+    image: snehal22/user-rest:new
   backend_feed:
     build:
       context: ../../udacity-api-feed
