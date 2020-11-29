@@ -1,0 +1,8 @@
+aws eks --region us-east-2 update-kubeconfig --name monomicro
+
+kubectl autoscale deployment backend-user --cpu-percent=50 --min=1 --max=10
+
+kubectl config delete-context *
+
+kubectl config delete-cluster *
+
