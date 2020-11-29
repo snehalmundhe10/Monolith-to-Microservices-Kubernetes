@@ -25,3 +25,6 @@ Start with creating dockerfiles for each independent application- frontend, back
 3. Push the images: docker-compose -f docker-compose-build.yaml push
 4. Run the container: docker-compose up
 
+### Performed by & Author
+Snehal Mundhe
+
