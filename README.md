@@ -16,8 +16,8 @@ Start with creating dockerfiles for each independent application- frontend, back
 ### Deploy to kubernetes
 1. Create Amazon EKS cluster on AWS
 2. Create worker nodes in EKS cluster
-3. Bind AWS EKS cluster with kubectl using aws eks --region <region> update-kubeconfig --name <clusterr_name>
-4. Create the kubernetes resources for backend feed api, backend user api, frontend and reverseproxy by kubectl apply -f  <service & deployment_filename>.yml
+3. Bind AWS EKS cluster with kubectl using aws eks --region {region} update-kubeconfig --name {clusterr_name}
+4. Create the kubernetes resources for backend feed api, backend user api, frontend and reverseproxy by kubectl apply -f  {service & deployment_filename}.yml
  
 ### Start app as a container on local system
 1. Navigate to Deployment folder --> Docker folder
